@@ -1,0 +1,10 @@
+name: Example
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Secret URL
+        run: echo "${{ secrets.SECRET_URL }}"
